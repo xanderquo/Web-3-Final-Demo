@@ -336,9 +336,32 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.top-content-spacing {
+  padding-top: 60px;
+}
+@media (min-width: 1440px) {
+  .top-content-spacing {
+    padding-top: 60px;
+  }
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -363,6 +386,10 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
