@@ -19,11 +19,18 @@
 @import "layout/_footer";
 
 // Sections Styles
-@import "sections/_hero";
-@import "sections/_packageOpt";
+@import "sections/product/_hero";
+@import "sections/product/_packageOpt";
 
-@import "sections/_tools";
-@import "sections/_allergyGallery";
-@import "sections/_accessories";
+@import "sections/product/_tools";
+@import "sections/product/_allergyGallery";
+@import "sections/product/_accessories";
 
-@import "sections/_reviews";
+@import "sections/product/_reviews";
+
+// the things with the checkout and thankyou yea
+@import "sections/checkout/_checkout";
+@import "sections/checkout/_top";
+
+@import "sections/thankyou/_recommendation";
+@import "sections/thankyou/_thankyou";

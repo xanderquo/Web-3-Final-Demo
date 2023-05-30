@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/deploy\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -445,6 +453,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/thankyou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 0
+    },
     "\/dev\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -453,52 +469,84 @@
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
     },
-    "\/dev\/content\/accessories.kit" : {
+    "\/dev\/content\/checkout\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/accessories.html",
+      "oAP" : "\/dev\/content\/checkout\/checkout.html",
       "oF" : 0
     },
-    "\/dev\/content\/allergyGallery.kit" : {
+    "\/dev\/content\/checkout\/top.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/allergyGallery.html",
+      "oAP" : "\/dev\/content\/checkout\/top.html",
       "oF" : 0
     },
-    "\/dev\/content\/hero.kit" : {
+    "\/dev\/content\/product\/accessories.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/hero.html",
+      "oAP" : "\/dev\/content\/product\/accessories.html",
       "oF" : 0
     },
-    "\/dev\/content\/packageOpt.kit" : {
+    "\/dev\/content\/product\/allergyGallery.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/packageOpt.html",
+      "oAP" : "\/dev\/content\/product\/allergyGallery.html",
       "oF" : 0
     },
-    "\/dev\/content\/reviews.kit" : {
+    "\/dev\/content\/product\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/reviews.html",
+      "oAP" : "\/dev\/content\/product\/hero.html",
       "oF" : 0
     },
-    "\/dev\/content\/tools.kit" : {
+    "\/dev\/content\/product\/packageOpt.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/tools.html",
+      "oAP" : "\/dev\/content\/product\/packageOpt.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/reviews.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/product\/reviews.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/tools.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/product\/tools.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/thankyou\/recommendation.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/thankyou\/recommendation.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/thankyou\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/thankyou\/thankyou.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -529,7 +577,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
@@ -702,7 +750,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_accessories.scss" : {
+    "\/dev\/scss\/sections\/checkout\/_checkout.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -711,13 +759,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_accessories.css",
+      "oAP" : "\/dev\/scss\/sections\/checkout\/_checkout.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_allergyGallery.scss" : {
+    "\/dev\/scss\/sections\/checkout\/_top.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -726,13 +774,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_allergyGallery.css",
+      "oAP" : "\/dev\/scss\/sections\/checkout\/_top.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_hero.scss" : {
+    "\/dev\/scss\/sections\/product\/_accessories.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -741,13 +789,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oAP" : "\/dev\/scss\/sections\/product\/_accessories.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_packageOpt.scss" : {
+    "\/dev\/scss\/sections\/product\/_allergyGallery.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -756,13 +804,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_packageOpt.css",
+      "oAP" : "\/dev\/scss\/sections\/product\/_allergyGallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_reviews.scss" : {
+    "\/dev\/scss\/sections\/product\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -771,13 +819,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_reviews.css",
+      "oAP" : "\/dev\/scss\/sections\/product\/_hero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_tools.scss" : {
+    "\/dev\/scss\/sections\/product\/_packageOpt.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -786,7 +834,67 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_tools.css",
+      "oAP" : "\/dev\/scss\/sections\/product\/_packageOpt.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/product\/_reviews.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/product\/_reviews.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/product\/_tools.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/product\/_tools.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/thankyou\/_recommendation.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/thankyou\/_recommendation.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/thankyou\/_thankyou.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/thankyou\/_thankyou.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
