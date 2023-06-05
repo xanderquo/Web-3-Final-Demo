@@ -17,21 +17,21 @@
 </head>
 
 <body>
-    <header>
+    <header class = "top-content-spacing">
         <div>
             <!-- Header changes with screen size, add everything needed generally-->
             <a href="index.html">
                 <img src="img/PhtoIcons/SharkStratosLogo.jpg" alt="shark logo">
     
             <section id="LeftSection">
-                <section>
+                <section id = "account">
                     <button>
                         <i class="fa-regular fa-user" style="color: #d3e4ff;"></i>
                         <p>Account</p>
                     </button>
                 </section>
     
-                <section>
+                <section id = "sign">
                     <button>
                         <i class="fa-solid fa-envelope" style="color: #d3e4ff;"></i>
                         <p>Sign Up</p>
@@ -40,7 +40,7 @@
                 
             </section>
     
-            <section id="MidSection">
+            <section id="logo">
                 <button>
                     <a href="index.html">
                         <img src="img/PhtoIcons/SharkMobileLogo.jpg" alt="shark logo"></a>
@@ -48,23 +48,24 @@
             </section>
     
             <section id="RightSection">
-                <section>
+                <section id="checkout">
                     <button>
                         <a href="checkout.html">
-                            <i class="fa-regular fa-cart-shopping" style="color: #d3e4ff;"></i>
+                            <i class="fas fa-shopping-cart" style="color: #d3e4ff;"></i>
                             <p>Checkout</p></a>
                     </button>
                 </section>
     
-                <!--Nav Section don't worry yet, keep the shopping-->
-                <button>
-                    <i class="fa-regular fa-cart-shopping" style="color: #d3e4ff;"></i>
-                </button>
-                <!-- <button>
-                    <img src="img/PhtoIcons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="Facebook">
-                </button> -->
+                <!--Nav burger-->
+                <section id="burger">
+                    <button>
+                        <i class="fas fa-bars" style="color: #d3e4ff;"></i>
+    
+                    </button>
+                </section>
             </section>
     
+            <!--nav section-->
             <nav id="main-menu">
                 <ul>
                     <li><a href="#tools">Tools</a></li>
@@ -76,9 +77,7 @@
     
                 <!--Search option-->
                 <form action="#">
-                    <button>
-                        <img src="img/PhtoIcons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="Search">
-                    </button>
+                    <img src="img/PhtoIcons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="Search">
     
                     <input type = "search" placeholder="Ideate...">
                 </form>

@@ -357,9 +357,13 @@ ul li {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
 /* =============
@@ -393,6 +397,45 @@ a {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-areas: "account sign logo checkout burger" "form . . . ." "nav . . . ." "nav . . . ." "nav . . . ." "nav . . . ." "nav . . . .";
+}
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: 70% auto;
+    grid-template-areas: "logo . . sign checkout logo" "nav nav nav nav nav form";
+  }
+}
+header #account {
+  grid-area: account;
+  padding: 16px;
+}
+header #sign {
+  grid-area: sign;
+  padding: 16px;
+}
+header #logo {
+  grid-area: logo;
+  padding: 16px;
+}
+header #checkout {
+  grid-area: checkout;
+  padding: 16px;
+}
+header #burger {
+  grid-area: burger;
+  padding: 16px;
+}
+header nav {
+  grid-area: nav;
+  padding: 16px;
+}
+header form {
+  grid-area: form;
+  padding: 16px;
+}
 /* =============
     Footer
 ============= */
@@ -422,7 +465,4 @@ a {
 ============= */
 /* =============
     recommendation
-============= */
-/* =============
-    thankyou
 ============= */

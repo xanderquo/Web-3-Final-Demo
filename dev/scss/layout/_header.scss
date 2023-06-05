@@ -1,4 +1,60 @@
 /* =============
     Header
 ============= */
+header{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: 
+    "account sign logo checkout burger"
+    "form . . . ."
+    "nav . . . ."
+    "nav . . . ."
+    "nav . . . ."
+    "nav . . . ."
+    "nav . . . .";
 
+    @include md{
+        grid-template-columns: 70% auto;
+        grid-template-areas: 
+        "logo . . sign checkout logo"
+        "nav nav nav nav nav form";
+    }
+
+    #account{
+        grid-area : account;
+        padding : 16px;
+    }
+
+    #sign{
+        grid-area : sign;
+        padding : 16px;
+    }
+
+    #logo{
+        grid-area : logo;
+        padding : 16px;
+    }
+
+    #checkout{
+        grid-area : checkout;
+        padding : 16px;
+    }
+
+    #burger{
+        grid-area: burger;
+        padding : 16px;
+    }
+
+    nav{
+        grid-area : nav;
+        padding : 16px;
+    }
+
+    form{
+        grid-area : form;
+        padding : 16px;
+        input{
+
+        }
+    }
+}
