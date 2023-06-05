@@ -349,10 +349,40 @@ ul li {
 .top-content-spacing {
   padding-top: 60px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .top-content-spacing {
     padding-top: 60px;
   }
+}
+
+.large-images {
+  width: 100%;
+}
+
+.purpleButton {
+  background-color: var(--TillandsiaPurple);
+  color: white;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.purpleButton h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+
+.pinkButton {
+  background-color: var(--PurpleYearning);
+  padding: 24px 16px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 
 /* =============
@@ -474,3 +504,34 @@ header > div form {
 /* =============
     recommendation
 ============= */
+#thankyou {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". thanks .";
+}
+@media (min-width: 768px) {
+  #thankyou {
+    grid-template-columns: 136px auto 136px;
+  }
+}
+@media (min-width: 1440px) {
+  #thankyou {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#thankyou > div {
+  grid-area: thanks;
+}
+#thankyou > div h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: var(--ObsidianBlack);
+  text-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #thankyou > div h1 {
+    font-size: 6rem;
+  }
+}

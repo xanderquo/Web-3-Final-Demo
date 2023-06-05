@@ -1,0 +1,44 @@
+// Thank you//
+#thankyou{
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". thanks .";
+
+    @include md{
+        grid-template-columns : 136px auto 136px;
+    }
+
+    @include xxl{
+        grid-template-columns : auto 1440px auto;
+    }
+
+    >div{
+        grid-area : thanks;
+        h1{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: rem-calc(60);
+            color: var(--ObsidianBlack);
+            text-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25);
+
+            text-align: center;
+
+            @include md{
+                font-size: rem-calc(96);
+            }
+        }
+
+        img{
+            
+        }
+
+        section{
+            span{
+
+            }
+            p{
+
+            }
+        }
+    }
+}
