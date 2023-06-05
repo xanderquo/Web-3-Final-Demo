@@ -339,6 +339,7 @@ template {
 ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 ul li {
   padding: 0;
@@ -398,41 +399,48 @@ a {
     Header
 ============= */
 header {
+  background-color: #3C4858;
   display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-areas: "account sign logo checkout burger" "form . . . ." "nav . . . ." "nav . . . ." "nav . . . ." "nav . . . ." "nav . . . .";
+  grid-template-columns: 1fr, auto;
+  grid-template-areas: "leftSec logo rightSec";
+}
+header #bigLogo {
+  display: none;
 }
 @media (min-width: 768px) {
   header {
-    grid-template-columns: 70% auto;
-    grid-template-areas: "logo . . sign checkout logo" "nav nav nav nav nav form";
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "logo leftSec rightSec" "nav . form";
+  }
+  header #bigLogo {
+    display: block;
+  }
+  header #smallLogo {
+    display: none;
   }
 }
-header #account {
-  grid-area: account;
-  padding: 16px;
+header > div #LeftSection {
+  grid-area: leftSec;
+  padding: 36px;
 }
-header #sign {
-  grid-area: sign;
-  padding: 16px;
+header > div #LeftSection section button p {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 28px;
 }
-header #logo {
+header > div #logo {
   grid-area: logo;
-  padding: 16px;
+  padding: 36px;
 }
-header #checkout {
-  grid-area: checkout;
-  padding: 16px;
+header > div #RightSection {
+  grid-area: rightSec;
+  padding: 36px;
 }
-header #burger {
-  grid-area: burger;
-  padding: 16px;
-}
-header nav {
+header > div nav {
   grid-area: nav;
-  padding: 16px;
+  padding: 36px;
 }
-header form {
+header > div form {
   grid-area: form;
   padding: 16px;
 }

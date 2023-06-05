@@ -2,59 +2,68 @@
     Header
 ============= */
 header{
+    background-color: #3C4858;
+
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 1fr, auto;
     grid-template-areas: 
-    "account sign logo checkout burger"
-    "form . . . ."
-    "nav . . . ."
-    "nav . . . ."
-    "nav . . . ."
-    "nav . . . ."
-    "nav . . . .";
+    "leftSec logo rightSec";
+
+    #bigLogo{
+        display : none;
+    }
 
     @include md{
-        grid-template-columns: 70% auto;
+        grid-template-columns: 1fr auto;
         grid-template-areas: 
-        "logo . . sign checkout logo"
-        "nav nav nav nav nav form";
+        "logo leftSec rightSec"
+        "nav . form";
+        
+        #bigLogo{
+            display : block;
+        }
+
+        #smallLogo{
+            display : none;
+        }
     }
 
-    #account{
-        grid-area : account;
-        padding : 16px;
-    }
-
-    #sign{
-        grid-area : sign;
-        padding : 16px;
-    }
-
-    #logo{
-        grid-area : logo;
-        padding : 16px;
-    }
-
-    #checkout{
-        grid-area : checkout;
-        padding : 16px;
-    }
-
-    #burger{
-        grid-area: burger;
-        padding : 16px;
-    }
-
-    nav{
-        grid-area : nav;
-        padding : 16px;
-    }
-
-    form{
-        grid-area : form;
-        padding : 16px;
-        input{
-
+    >div{
+        #LeftSection{
+            grid-area : leftSec;
+            padding : 36px;
+            section{
+                button{
+                    p{
+                        font-weight: 900;
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    
+        #logo{
+            grid-area : logo;
+            padding : 36px;
+        }
+    
+        #RightSection{
+            grid-area : rightSec;
+            padding : 36px;
+        }
+    
+        nav{
+            grid-area : nav;
+            padding : 36px;
+        }
+    
+        form{
+            grid-area : form;
+            padding : 16px;
+            input{
+    
+            }
         }
     }
 }
