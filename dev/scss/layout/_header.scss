@@ -29,6 +29,9 @@ header{
     }
 
     >div{
+        display : flex;
+        flex-direction: row;
+        
         #LeftSection{
             grid-area : leftSec;
             padding : 36px;

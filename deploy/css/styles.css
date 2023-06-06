@@ -347,11 +347,11 @@ ul li {
 }
 
 .top-content-spacing {
-  padding-top: 60px;
+  padding-top: 64px;
 }
 @media (min-width: 1200px) {
   .top-content-spacing {
-    padding-top: 60px;
+    padding-top: 64px;
   }
 }
 
@@ -449,6 +449,10 @@ header #bigLogo {
     display: none;
   }
 }
+header > div {
+  display: flex;
+  flex-direction: row;
+}
 header > div #LeftSection {
   grid-area: leftSec;
   padding: 36px;
@@ -522,16 +526,66 @@ header > div form {
 #thankyou > div {
   grid-area: thanks;
 }
+#thankyou > div #leftSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#thankyou > div #leftSection h1 {
+  display: block;
+}
+@media (min-width: 768px) {
+  #thankyou > div #leftSection h1 {
+    display: none;
+  }
+}
+#thankyou > div #rightSection h1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #thankyou > div #rightSection h1 {
+    display: block;
+  }
+}
 #thankyou > div h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 3.75rem;
   color: var(--ObsidianBlack);
   text-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25);
+  margin-top: 64px;
   text-align: center;
 }
 @media (min-width: 768px) {
   #thankyou > div h1 {
     font-size: 6rem;
   }
+}
+#thankyou > div img {
+  margin-top: 48px;
+  text-align: center;
+}
+#thankyou > div section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0px;
+  gap: 24px;
+}
+#thankyou > div section p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+#thankyou > div section span {
+  font-weight: 700;
+}
+#thankyou > div #buttonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#thankyou > div #buttonSection button {
+  display: flex;
+  flex-direction: row;
 }
