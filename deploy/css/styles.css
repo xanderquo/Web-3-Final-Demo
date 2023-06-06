@@ -497,6 +497,13 @@ header > div form {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #3C4858;
+  margin-top: 48px;
+  padding: 16px;
+  color: white;
+}
+
 /* =============
     Hero
 ============= */
