@@ -564,23 +564,34 @@ header > div form {
 #thankyou > div img {
   margin-top: 48px;
   text-align: center;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  display: block;
+  width: 33%;
 }
 #thankyou > div section {
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px 0px;
-  gap: 24px;
+  background: #E1DFDD;
+  border-radius: 16px;
 }
 #thankyou > div section p {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
+  padding: 16px 8px;
 }
 #thankyou > div section span {
   font-weight: 700;
 }
+#thankyou > div section ul li {
+  width: 50%;
+}
 #thankyou > div #buttonSection {
+  background: none;
+  border-radius: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
