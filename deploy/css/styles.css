@@ -515,18 +515,27 @@ header > div form {
 }
 @media (min-width: 768px) {
   #thankyou {
-    grid-template-columns: 136px auto 136px;
+    grid-template-columns: 134px auto 134px;
   }
 }
 @media (min-width: 1440px) {
   #thankyou {
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: auto 1172px auto;
   }
 }
 #thankyou > div {
   grid-area: thanks;
 }
+@media (min-width: 768px) {
+  #thankyou > div {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-areas: "image info";
+    gap: 25%;
+  }
+}
 #thankyou > div #leftSection {
+  grid-area: image;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -538,6 +547,9 @@ header > div form {
   #thankyou > div #leftSection h1 {
     display: none;
   }
+}
+#thankyou > div #rightSection {
+  grid-area: info;
 }
 #thankyou > div #rightSection h1 {
   display: none;
@@ -567,6 +579,13 @@ header > div form {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
   display: block;
   width: 33%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  #thankyou > div img {
+    width: 100%;
+    height: 85vh;
+  }
 }
 #thankyou > div section {
   margin-top: 48px;
@@ -586,8 +605,16 @@ header > div form {
 #thankyou > div section span {
   font-weight: 700;
 }
+#thankyou > div section ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 #thankyou > div section ul li {
   width: 50%;
+}
+#thankyou > div section ul li a i {
+  height: 100%;
 }
 #thankyou > div #buttonSection {
   background: none;
