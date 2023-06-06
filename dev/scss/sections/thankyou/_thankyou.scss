@@ -17,7 +17,7 @@
 
         @include md{
             display : grid;
-            grid-template-columns: 25% auto;
+            grid-template-columns: 20% auto;
             grid-template-areas : "image info";
             gap : 25%;
 
@@ -28,6 +28,7 @@
 
         #leftSection{
             grid-area : image;
+            
             display : flex;
             align-items : center;
             flex-direction : column;
@@ -39,19 +40,20 @@
                     display : none;
                 }
             }
-
         }
 
         #rightSection{
             grid-area : info;
-            h1{
-                display : none;
 
-                @include md{
-                    display : block;
+            >div{
+                h1{
+                    display : none;
+    
+                    @include md{
+                        display : block;
+                    }
                 }
             }
-
         }
 
         h1{
@@ -71,7 +73,6 @@
 
         img{
             margin-top : 48px;
-            text-align : center;
             box-shadow : 0px 8px 24px rgba(0, 0, 0, 0.25);
             display : block;
             width : 33%;
@@ -110,13 +111,16 @@
             ul{
                 display : flex;
                 flex-direction : row;
-                align-items : center;
+                gap : 8px;
+                
                 li{
-                    width : 50%;
-                    a{
-                        i{
-                            height : 100%;
-                        }
+                    img{
+                        width : 64px;
+                        height : 64px;
+                        margin-top : 0px;
+                        
+                        box-shadow: none;
+                        border-radius: none;
                     }
                 }
             }
@@ -131,9 +135,25 @@
             flex-direction : row;
             justify-content : space-evenly;
 
+            gap : 6px;
+
+            @include md{
+                gap : 5%;
+            }
+
             button{
                 display : flex;
                 flex-direction : row;
+                justify-content : center;
+                gap : 8px;
+
+                img{
+                    margin-top : 0px;
+                    width : 40px;
+                    height : 40px;
+                }
+
+                width : 100%;
             }
         }
     }
