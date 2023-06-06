@@ -362,6 +362,7 @@ ul li {
 .purpleButton {
   background-color: var(--TillandsiaPurple);
   color: white;
+  border: none;
   box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   justify-content: center;
@@ -381,12 +382,19 @@ ul li {
 
 .pinkButton {
   background-color: var(--PurpleYearning);
-  padding: 24px 16px;
   color: white;
-  justify-content: center;
-  align-items: center;
+  border: none;
   box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+  text-align: center;
 }
 .pinkButton img {
   box-shadow: none;
@@ -516,6 +524,77 @@ header > div form {
 /* =============
     recommendation
 ============= */
+#recommendation {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+@media (min-width: 768px) {
+  #recommendation {
+    grid-template-columns: 134px auto 134px;
+  }
+}
+@media (min-width: 1440px) {
+  #recommendation {
+    grid-template-columns: auto 1172px auto;
+  }
+}
+#recommendation > div {
+  margin-top: 48px;
+  grid-area: main;
+}
+#recommendation > div h1 {
+  text-align: center;
+}
+#recommendation > div #bottomSection {
+  margin-top: 48px;
+}
+@media (min-width: 768px) {
+  #recommendation > div #bottomSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#recommendation > div #bottomSection .recommend {
+  align-self: stretch;
+}
+#recommendation > div #bottomSection .recommend aside {
+  margin-top: 48px;
+}
+@media (min-width: 768px) {
+  #recommendation > div #bottomSection .recommend aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 24px;
+  }
+}
+#recommendation > div #bottomSection .recommend aside .details {
+  text-decoration: none;
+  text-decoration-line: underline;
+  background-color: none;
+  border: none;
+  background-color: transparent;
+}
+#recommendation > div #bottomSection .recommend h3 {
+  margin-top: 24px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+#recommendation > div #bottomSection .recommend p {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 #thankyou {
   display: grid;
   grid-template-columns: 16px auto 16px;
