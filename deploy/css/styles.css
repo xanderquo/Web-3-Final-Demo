@@ -371,7 +371,7 @@ ul li {
 }
 .purpleButton h2 {
   font-family: "Oswald", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 22px;
   text-align: center;
 }
@@ -600,7 +600,7 @@ footer {
 #checkout > div #leftSection #total h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 60px;
   line-height: 60px;
   text-align: center;
   color: #FFFFFF;
@@ -616,13 +616,20 @@ footer {
   width: 100%;
   justify-content: space-between;
 }
+#checkout > div #leftSection #total #totalAmount h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 60px;
+}
 #checkout > div #leftSection #total #promo {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 #checkout > div #leftSection #total #promo h3 {
-  align-self: center;
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
 }
 #checkout > div #leftSection #total #promo input {
   padding: 8px 16px;
@@ -633,7 +640,13 @@ footer {
 #checkout > div #leftSection #total button {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  justify-content: center;
+  gap: 8px;
+  width: 50%;
+  padding: 16px;
+}
+#checkout > div #leftSection #total button h2 {
+  font-size: 2rem;
 }
 
 /* =============
