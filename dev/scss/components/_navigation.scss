@@ -2,6 +2,20 @@
     Navigation
 ============= */
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
+}
+
+.show-menu{
+    display: block !important;
+}
+
+nav{
+    display : none;
+    background: var(--NightGullGrey);
+    color: white;
 }
