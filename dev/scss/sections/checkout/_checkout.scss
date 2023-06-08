@@ -1,3 +1,143 @@
 /* =============
     checkout
 ============= */
+
+#checkout{
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". thanks .";
+
+    @include md{
+        grid-template-columns : 134px auto 134px;
+    }
+
+    @include xxl{
+        grid-template-columns : auto 1172px auto;
+    }
+
+    >div{
+        grid-area : thanks;
+
+        #leftSection{
+    
+            #top{
+                display : flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+
+                img{
+                    margin-top : 48px;
+                    box-shadow : 0px 8px 24px rgba(0, 0, 0, 0.25);
+                    display : block;
+                    width : 33%;
+                    object-fit : contain;
+                   align-self : center;
+            
+                    @include md{
+                        width : 100%;
+                        height : 85vh;
+                    }
+                }
+
+                h1{
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 24px;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content : space-between;
+                    width : 100%;
+                    gap: 40px;
+
+                    h3{
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 24px;
+                    }
+    
+                    p{
+                        //width: 358px;
+                        //height: 78px;
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            #total{
+                background-color : var(--BashfulEmu);
+                color : white;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 16px 32px;
+                gap: 16px;
+
+                h2{
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 60px;
+                    text-align: center;
+
+                    color: #FFFFFF;
+                }
+
+                h3{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+
+                div{
+
+                    display : flex;
+                    flex-direction: row;
+                    width : 100%;
+                    justify-content : space-between;
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // padding: 16px 32px;
+                    ul{
+                        li{
+                            
+                        }
+                    }
+                }
+
+                #promo{
+                    display : flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    h3{
+                        align-self : center;
+                    }
+
+                    input{
+                        padding: 8px 16px;
+                        background: var(--CityBrume);
+                        border: 2px solid white;
+                        box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+                    }
+                }
+
+                button{
+                    display : flex;
+                    flex-direction: row;
+                    gap : 16px;
+                }
+            }
+        }
+    }
+}

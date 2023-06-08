@@ -371,7 +371,7 @@ ul li {
 }
 .purpleButton h2 {
   font-family: "Oswald", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 22px;
   text-align: center;
 }
@@ -525,9 +525,117 @@ footer {
 /* =============
     checkout
 ============= */
-/* =============
-    top
-============= */
+#checkout {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". thanks .";
+}
+@media (min-width: 768px) {
+  #checkout {
+    grid-template-columns: 134px auto 134px;
+  }
+}
+@media (min-width: 1440px) {
+  #checkout {
+    grid-template-columns: auto 1172px auto;
+  }
+}
+#checkout > div {
+  grid-area: thanks;
+}
+#checkout > div #leftSection #top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+#checkout > div #leftSection #top img {
+  margin-top: 48px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  display: block;
+  width: 33%;
+  object-fit: contain;
+  align-self: center;
+}
+@media (min-width: 768px) {
+  #checkout > div #leftSection #top img {
+    width: 100%;
+    height: 85vh;
+  }
+}
+#checkout > div #leftSection #top h1 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+}
+#checkout > div #leftSection #top div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+}
+#checkout > div #leftSection #top div h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+}
+#checkout > div #leftSection #top div p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+}
+#checkout > div #leftSection #total {
+  background-color: var(--BashfulEmu);
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 16px;
+}
+#checkout > div #leftSection #total h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#checkout > div #leftSection #total h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+#checkout > div #leftSection #total div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+#checkout > div #leftSection #total #promo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#checkout > div #leftSection #total #promo h3 {
+  align-self: center;
+}
+#checkout > div #leftSection #total #promo input {
+  padding: 8px 16px;
+  background: var(--CityBrume);
+  border: 2px solid white;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+}
+#checkout > div #leftSection #total button {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
 /* =============
     recommendation
 ============= */
