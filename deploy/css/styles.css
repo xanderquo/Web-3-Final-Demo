@@ -360,52 +360,60 @@ ul li {
 }
 
 .method {
-  background: var(--CityBrume);
-  background: var(--NightGullGrey);
   background: var(--BashfulEmu);
-}
-.method h2, .method h3, .method p, .method button, .method input {
+  justify-content: center;
   align-items: center;
-  padding: 24px 40px;
-  gap: 8px;
+}
+.method div h2, .method div h3, .method div p, .method div button, .method div input {
+  margin: 16px;
+  padding: 24px 8px;
+  width: 90%;
   background: var(--CityBrume);
-  border: 2px solid #000000;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
-.method h2 {
-  align-items: center;
+.method div h2 {
+  margin: 0px;
   padding: 16px 8px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   color: var(--CityBrume);
   background: var(--NightGullGrey);
+  border: none;
+  border-radius: 8px 8px 0px 0px;
 }
-.method h3 {
+.method div h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: white;
   background: none;
 }
-.method p {
+.method div p {
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
   color: var(--NightGullGrey);
 }
-.method button, .method input {
+.method div ul {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.method div button, .method div input {
   text-decoration: none;
   outline: none;
   border: none;
+  width: 100%;
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
-.method button:active {
-  box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.25), inset 0px 0px 32px rgba(0, 0, 0, 0.5);
+.method div button:active {
+  box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.25);
   border: 2px solid #000000;
 }
 
