@@ -7,4 +7,100 @@ footer{
     margin-top : 48px;
     padding : 16px;
     color : white;
+
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". footer .";
+
+    @include md{
+        grid-template-columns : 134px auto 134px;
+    }
+
+    @include xxl{
+        grid-template-columns : auto 1172px auto;
+    }
+
+    >div{
+        grid-area : footer;
+        margin-top : 32px;
+
+        @include md{
+            display : grid;
+            grid-template-columns: 35% 15% 60%;
+            grid-template-areas: "left . right";
+        }
+
+        #top-left{
+             grid-area : left;
+        }
+
+        #bottom-right{
+            grid-area : right;
+
+            display : grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "user products"
+            "support about";
+
+            #User{
+                grid-area: user;
+            }
+    
+            #Products{
+                grid-area: products;
+            }
+    
+            #Support{
+                grid-area: support;
+            }
+    
+            #About{
+                grid-area: about;
+            }
+        }
+
+        img{
+            width : 100%;
+        }
+
+        h1{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+
+            text-align: center;
+        }
+
+        h3{
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 28px;
+            /* identical to box height, or 233% */
+
+            text-align: center;
+        }
+
+        //main titles for sections
+        h2{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+
+            /* Veiling Waterfalls */
+
+            color: var(--VeilingWaterfalls);
+            border-left : 4px solid var(--VeilingWaterfalls);
+            padding-left: 8px;
+        }
+
+        button{
+            padding: 0;
+            border: none;
+            background: none;
+            color : white;
+
+        }
+    }
 }
