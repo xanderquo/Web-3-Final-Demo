@@ -459,6 +459,26 @@ ul li {
   border-radius: none;
 }
 
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 60px;
+  /* identical to box height, or 214% */
+  color: #000000;
+  filter: drop-shadow(0px 16px 8px rgba(0, 0, 0, 0.25));
+}
+
+.anothaTitle {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 34px;
+  padding: 0px 8px;
+  text-align: right;
+  border-right: 4px solid black;
+  color: #000000;
+}
+
 /* =============
     Typography
 ============= */
@@ -742,6 +762,7 @@ footer > div button {
 }
 #hero > div img {
   height: 60vh;
+  object-fit: contain;
 }
 #hero > div h1 {
   align-self: center;
@@ -834,12 +855,176 @@ footer > div button {
 /* =============
     tools
 ============= */
+#tools {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". tools .";
+  margin: 0px;
+  padding: 0px;
+  gap: 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #tools {
+    grid-template-columns: 134px auto 134px;
+  }
+}
+@media (min-width: 1440px) {
+  #tools {
+    grid-template-columns: auto 1172px auto;
+  }
+}
+#tools > div {
+  margin-top: 60px;
+  grid-area: tools;
+}
+#tools > div section {
+  background-color: var(--CityBrume);
+}
+#tools > div section h2 {
+  padding-top: 16px;
+  margin-top: 16px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 24px;
+  text-align: center;
+  color: var(--Alligator);
+}
+#tools > div section p {
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+}
+#tools > div #gal {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 16px 1fr;
+  grid-template-areas: "left . right";
+}
+#tools > div #gal img {
+  filter: drop-shadow(0px 16px 8px rgba(0, 0, 0, 0.25));
+  margin-bottom: -50%;
+}
+#tools > div #gal #left {
+  grid-area: left;
+}
+#tools > div #gal #right {
+  grid-area: right;
+}
+
 /* =============
     allergyGallery
 ============= */
+#allergyGallery {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". gal .";
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #allergyGallery {
+    grid-template-columns: 134px auto 134px;
+  }
+}
+@media (min-width: 1440px) {
+  #allergyGallery {
+    grid-template-columns: auto 1172px auto;
+  }
+}
+#allergyGallery > div {
+  margin-top: 60px;
+  grid-area: gal;
+}
+#allergyGallery > div section {
+  background-color: var(--CityBrume);
+  display: flex;
+  flex-direction: column;
+}
+#allergyGallery > div section button {
+  margin-top: 8px;
+  align-self: flex-end;
+  width: 60%;
+}
+#allergyGallery > div section h2 {
+  padding-top: 16px;
+}
+#allergyGallery > div section p {
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 14px;
+  text-align: right;
+  color: #000000;
+}
+#allergyGallery > div #galImg {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 16px 1fr;
+  grid-template-areas: "left . right";
+}
+#allergyGallery > div #galImg img {
+  filter: drop-shadow(0px 16px 8px rgba(0, 0, 0, 0.25));
+  margin-bottom: -50%;
+}
+#allergyGallery > div #galImg #left {
+  grid-area: left;
+}
+#allergyGallery > div #galImg #right {
+  grid-area: right;
+}
+#allergyGallery > div #backIMG {
+  object-fit: cover;
+  object-position: 0px -225px;
+  height: 30vh;
+}
+
 /* =============
     accesssories
 ============= */
+#accessories {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". gal .";
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #accessories {
+    grid-template-columns: 134px auto 134px;
+  }
+}
+@media (min-width: 1440px) {
+  #accessories {
+    grid-template-columns: auto 1172px auto;
+  }
+}
+#accessories > div {
+  margin-top: 60px;
+  grid-area: gal;
+}
+#accessories > div section {
+  display: grid;
+  grid-template-columns: 1fr 16px 1fr;
+  grid-template-areas: "lift . rite";
+}
+#accessories > div section #gal #steamMop {
+  grid-area: lift;
+}
+#accessories > div section #gal #galImg {
+  grid-area: rite;
+}
+#accessories > div section #gal #galImg ul {
+  display: flex;
+  flex-direction: column;
+}
+#accessories > div section #gal #galImg ul li img {
+  height: 30vh;
+  width: 100%;
+}
+
 /* =============
     reviews
 ============= */

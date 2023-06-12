@@ -1,3 +1,78 @@
 /* =============
     tools
 ============= */
+
+#tools{
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". tools .";
+
+    @include md{
+        grid-template-columns : 134px auto 134px;
+    }
+
+    @include xxl{
+        grid-template-columns : auto 1172px auto;
+    }
+
+    // margin-top : 60px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    margin: 0px;
+    padding: 0px;
+    gap: 16px;
+    text-align : center;
+
+    >div{
+        margin-top : 60px;
+        grid-area : tools;
+
+        section{
+            background-color : var(--CityBrume);
+            h2{
+                padding-top : 16px;
+                margin-top : 16px;
+                font-style: italic;
+                font-weight: 600;
+                font-size: rem-calc(20);
+                line-height: 24px;
+    
+                text-align: center;
+                
+                color: var(--Alligator);
+            }
+    
+            p{
+                padding-top : 8px;
+                font-weight: 400;
+                font-size: rem-calc(12);
+                line-height: 14px;
+                text-align: center;
+                
+                color: #000000;
+            }
+        }
+
+        #gal{
+            padding-top : 16px;
+            display : grid;
+            grid-template-columns: 1fr 16px 1fr;
+            grid-template-areas: 
+            "left . right";
+
+            img{
+                filter: drop-shadow(0px 16px 8px rgba(0, 0, 0, 0.25));
+                margin-bottom : -50%;
+            }
+
+            #left{
+                grid-area : left;
+            }
+
+            #right{
+                grid-area : right;
+            }
+        }
+    }
+}

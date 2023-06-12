@@ -169,3 +169,26 @@ ul{
         //background-color : none;
     }
 }
+
+.title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: rem-calc(28);
+    line-height: 60px;
+    /* identical to box height, or 214% */
+
+    color: #000000;
+    filter: drop-shadow(0px 16px 8px rgba(0, 0, 0, 0.25));
+}
+
+.anothaTitle{
+    font-weight: 700;
+    font-size: rem-calc(28);
+    line-height: 34px;
+
+    padding : 0px 8px;
+    text-align: right;
+    border-right: 4px solid black;
+
+    color: #000000;
+}

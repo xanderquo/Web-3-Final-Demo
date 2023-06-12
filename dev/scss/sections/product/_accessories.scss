@@ -1,3 +1,53 @@
 /* =============
     accesssories
 ============= */
+
+#accessories{
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". gal .";
+    text-align : center;
+
+    @include md{
+        grid-template-columns : 134px auto 134px;
+    }
+
+    @include xxl{
+        grid-template-columns : auto 1172px auto;
+    }
+
+    >div{
+        margin-top : 60px;
+        grid-area : gal;
+
+        section{
+            display : grid;
+            grid-template-columns: 1fr 16px 1fr;
+            grid-template-areas: "lift . rite";
+            // object-fit : cover;
+            // object-position : 0px -225px;
+            // height: 30vh;
+
+            #gal{
+
+                #steamMop{
+                    grid-area : lift;
+                }
+                
+                #galImg{
+                    grid-area : rite;
+                    ul{
+                        display : flex;
+                    flex-direction : column;
+                        li{
+                            img{
+                                height : 30vh;
+                                width : 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
