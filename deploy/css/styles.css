@@ -611,12 +611,63 @@ footer > div {
 }
 footer > div #top-left {
   grid-area: left;
+  align-items: center;
+  gap: 16px;
+}
+footer > div #top-left #join {
+  margin-top: 32px;
+}
+footer > div #top-left #join ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+footer > div #top-left #join ul li {
+  margin-top: 16px;
+}
+footer > div #top-left #join ul li img {
+  width: 32px;
+  height: 32px;
+  margin-top: 0px;
+  box-shadow: none;
+  border-radius: none;
+}
+footer > div #top-left #news {
+  margin-top: 32px;
+}
+footer > div #top-left #news section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 4px solid var(--VeilingWaterfalls);
+}
+footer > div #top-left #news section button {
+  background: var(--VeilingWaterfalls);
+  color: var(--VeryNavy);
+  padding: 8px;
+}
+footer > div #top-left #news section h3 {
+  padding-left: 8px;
 }
 footer > div #bottom-right {
+  margin-top: 60px;
   grid-area: right;
   display: grid;
   grid-template-columns: 50% auto;
   grid-template-areas: "user products" "support about";
+}
+footer > div #bottom-right aside {
+  margin-top: 16px;
+}
+footer > div #bottom-right aside ul {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
 footer > div #bottom-right #User {
   grid-area: user;
@@ -635,21 +686,22 @@ footer > div img {
 }
 footer > div h1 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   /* or 175% */
   text-align: center;
 }
 footer > div h3 {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 28px;
   /* identical to box height, or 233% */
   text-align: center;
 }
 footer > div h2 {
+  margin-top: 16px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   /* Veiling Waterfalls */
   color: var(--VeilingWaterfalls);

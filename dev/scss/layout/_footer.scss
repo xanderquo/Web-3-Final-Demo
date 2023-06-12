@@ -32,9 +32,59 @@ footer{
 
         #top-left{
              grid-area : left;
+             align-items : center;
+             gap : 16px;
+
+             #join{
+                margin-top : 32px;
+
+                ul{
+                    display : flex;
+                    flex-direction : row;
+                    gap : 16px;
+    
+                    align-items : center;
+                    
+                    li{
+                        margin-top : 16px;
+                        img{
+                            width : 32px;
+                            height : 32px;
+                            margin-top : 0px;
+                            
+                            box-shadow: none;
+                            border-radius: none;
+                        }
+                    }
+                }
+             }
+
+             #news{
+                margin-top : 32px;
+                section{
+                    display : flex;
+                    flex-direction : row;
+                    width : 100%;
+                    justify-content : space-between;
+                    align-items : flex-end;
+                    border-bottom : 4px solid var(--VeilingWaterfalls);
+
+                    button{
+                        background : var(--VeilingWaterfalls);
+                        color : var(--VeryNavy);
+                        padding : 8px;
+                        //padding-left: 8px;
+                    }
+
+                    h3{
+                        padding-left : 8px;
+                    }
+                }
+             }
         }
 
         #bottom-right{
+            margin-top : 60px;
             grid-area : right;
 
             display : grid;
@@ -42,6 +92,18 @@ footer{
             grid-template-areas: 
             "user products"
             "support about";
+
+            aside{
+                margin-top : 16px;
+
+                ul{
+                    margin-top : 16px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                }
+            }
 
             #User{
                 grid-area: user;
@@ -66,7 +128,7 @@ footer{
 
         h1{
             font-weight: 700;
-            font-size: 16px;
+            font-size: rem-calc(16);
             line-height: 28px;
             /* or 175% */
 
@@ -75,7 +137,7 @@ footer{
 
         h3{
             font-weight: 300;
-            font-size: 12px;
+            font-size: rem-calc(12);
             line-height: 28px;
             /* identical to box height, or 233% */
 
@@ -84,8 +146,9 @@ footer{
 
         //main titles for sections
         h2{
+            margin-top : 16px;
             font-weight: 700;
-            font-size: 16px;
+            font-size: rem-calc(16);
             line-height: 19px;
 
             /* Veiling Waterfalls */
