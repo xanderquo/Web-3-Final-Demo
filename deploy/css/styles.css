@@ -718,9 +718,119 @@ footer > div button {
 /* =============
     Hero
 ============= */
+#hero {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+}
+@media (min-width: 768px) {
+  #hero {
+    grid-template-columns: 134px auto 134px;
+  }
+}
+@media (min-width: 1440px) {
+  #hero {
+    grid-template-columns: auto 1172px auto;
+  }
+}
+#hero > div {
+  grid-area: hero;
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+}
+#hero > div img {
+  height: 60vh;
+}
+#hero > div h1 {
+  align-self: center;
+  font-size: 2.125rem;
+  font-weight: 800;
+  line-height: 40px;
+}
+
 /* =============
     packageOpt
 ============= */
+#packageOpt {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+}
+@media (min-width: 768px) {
+  #packageOpt {
+    grid-template-columns: 134px auto 134px;
+  }
+}
+@media (min-width: 1440px) {
+  #packageOpt {
+    grid-template-columns: auto 1172px auto;
+  }
+}
+#packageOpt > div {
+  border: 4px solid black;
+  padding: 24px 16px;
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+#packageOpt > div aside {
+  width: 100%;
+  gap: 16px;
+}
+#packageOpt > div aside button {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 24px;
+  background: var(--BashfulEmu);
+  color: var(--NightGullGrey);
+  border-radius: 8px;
+}
+#packageOpt > div aside button img {
+  object-fit: contain;
+}
+#packageOpt > div aside button h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+}
+#packageOpt > div aside #truePet {
+  background-color: var(--CityBrume);
+  border: 4px solid #000000;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+#packageOpt > div h1 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 24px;
+}
+#packageOpt > div h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 35px;
+}
+#packageOpt > div #promo {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 28px;
+  color: var(--Alligator);
+  border: 4px solid var(--Alligator);
+  padding: 16px 8px;
+  width: 100%;
+  text-align: center;
+}
+
 /* =============
     tools
 ============= */
