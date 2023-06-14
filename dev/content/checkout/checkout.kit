@@ -110,11 +110,17 @@
                         <li>
                             <ul>
                                 <li><h3>Country</h3>
-                                    <p>N/A</p>
-                                    <i class="fa-solid fa-caret-down" style="color: #605e5c;"></i>
+                                    <div>
+                                        <p>N/A</p>
+                                        <i class="fa-solid fa-caret-down" style="color: #605e5c;"></i>
+                                    </div></li>
+                                    
                                 <li><h3>State</h3>
-                                    <p>N/A</p>
-                                    <i class="fa-solid fa-caret-down" style="color: #605e5c;"></i>
+                                    <div>
+                                        <p>N/A</p>
+                                        <i class="fa-solid fa-caret-down" style="color: #605e5c;"></i>
+                                    </div></li>
+                                    
                                 <li><h3>Zip Code</h3>
                                     <p>XXXXX</p>
                             </ul>
@@ -143,8 +149,10 @@
                         <li>
                             <ul>
                                 <li><h3>Date of Expiration</h3>
-                                    <p>N/A</p>
-                                    <img src="img/PhtoIcons/calendar_month_FILL0_wght400_GRAD0_opsz48.svg" alt="Company Logo">
+                                    <div>
+                                        <p>N/A</p>
+                                        <img src="img/PhtoIcons/calendar_month_FILL0_wght400_GRAD0_opsz48.svg" alt="Company Logo">
+                                    </div></li>
 
                                 <li><h3>CVV</h3>
                                     <input type = "email" placeholder="exampleemail@mail.com"></li>
@@ -154,15 +162,14 @@
                         <!--three-->
                         <li>
                             <h3>Card Holder's Name</h3>
-                            <input type = "Address" placeholder="000 Example St."></li>
+                            <input type = "Address" placeholder="John Doe"></li>
 
                         </li>
                     </ul>
                 </div>
             </section>
 
-             <!-- Repeated depending on mobile or website?
-             <section class = "total">
+            <section id = "total">
                 <h2>Total</h2>
 
                 <div>
@@ -183,18 +190,22 @@
                    </ul>
                 </div>
 
-                <div>
+                <div id = "promo">
                    <h3>Promo Code?</h3>
 
                    <input type = "promoCode" placeholder="000 Example St.">
                 </div>
                 
-                <div>
+                <div id = "totalAmount">
                    <h3>Total</h3>
-                   <p>$0.00</p>
-
+                   <h3>$0.00</h3>
                 </div>
-           </section> -->
+
+                <button class = "purpleButton">
+                   <h2>Proceed</h2>
+                   <i class="fa-solid fa-circle-arrow-right fa-2x" style="color: #ffffff;"></i>
+               </button>
+           </section>
         </aside>
     </div>
 </section>
