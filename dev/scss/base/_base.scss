@@ -250,16 +250,12 @@ ul{
             width : 100%;
 
         section{
-            //top comment & most crit. comment
             display: flex;
-            flex-direction : row;
+            flex-direction : column;
             }
-            div{
+            #OMGWORK{
                 display: flex;
-                flex-direction : row;
-                i{
-                    
-                }
+                flex-direction : column;
                 h2{
                     font-weight: 400;
                     font-size: 20px;
@@ -277,10 +273,6 @@ ul{
             img{
                 object-fit : contain;
                 width : 33%;
-            }
-
-            p{
-
             }
         }
     }

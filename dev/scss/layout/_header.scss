@@ -35,12 +35,19 @@ header{
     >div{
         display : flex;
         flex-direction: row;
+        align-items : center;
+        justify-content : center;
         
         #LeftSection{
             grid-area : leftSec;
             padding : 36px;
+            display : flex;
+            flex-direction: row;
+            
+
             section{
                 button{
+                    align-content : space-evenly;
                     p{
                         display : none;
                         font-weight: 900;
@@ -63,16 +70,39 @@ header{
         #RightSection{
             grid-area : rightSec;
             padding : 36px;
+            display : flex;
+            flex-direction: row;
+
+            p{
+                display : none;
+            }
+
+            @include md{
+                p{
+                    display : block
+                }
+            }
         }
     
         nav{
             grid-area : nav;
             padding : 36px;
+            display : none;
+
+            @include md{
+                display : block; 
+            }
         }
     
         form{
             grid-area : form;
             padding : 16px;
+            display : none;
+
+            @include md{
+                display : block; 
+            }
+            
             input{
     
             }
