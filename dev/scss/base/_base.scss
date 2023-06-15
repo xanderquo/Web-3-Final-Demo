@@ -199,6 +199,7 @@ ul{
     font-weight: 700;
     font-size: rem-calc(28);
     line-height: 60px;
+    //text-align : center;
     /* identical to box height, or 214% */
 
     color: #000000;
@@ -215,4 +216,32 @@ ul{
     border-right: 4px solid black;
 
     color: #000000;
+}
+
+.comment{
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". spacing .";
+
+    >div{
+        grid-area : spacing;
+        display : flex;
+        flex-direction: row;
+
+        //top comment & most crit. comment
+        h1{
+            
+        }
+
+        div{
+            section{
+                img{
+                    
+                }
+                h2{
+                    
+                }
+            }
+        }
+    }
 }

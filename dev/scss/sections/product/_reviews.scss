@@ -1,3 +1,151 @@
 /* =============
     reviews
 ============= */
+
+#reviews{
+    margin-top : 64px;
+
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". yeah .";
+
+    @include md{
+        grid-template-columns : 134px auto 134px;
+    }
+
+    @include xxl{
+        grid-template-columns : auto 1172px auto;
+    }
+
+    >div{
+        display : flex;
+        flex-direction: column;
+        gap : 16px;
+        grid-area : yeah;
+
+        //general input stuff
+        input{
+            text-decoration : none;
+            border : none;
+            padding : none;
+            margin : none;
+        }
+
+        h1{
+            align-self : center;
+        }
+
+        form{
+            gap : 8px;
+            border: 3px solid #333333;
+            border-radius: 8px;
+            padding : 16px;
+            display : flex;
+            flex-direction : row;
+            align-items : center;
+
+            input{
+                width : 100%;
+            }
+
+            img{
+                height : 2rem;
+            }
+        }
+
+        aside{
+            padding-bottom : 16px;
+            background-color: var(--CityBrume);
+            box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+            width : 100%;
+            display : flex;
+            flex-direction: column;
+            gap : 16px;
+
+            #topReviews{
+                align-items : center;
+                display : flex;
+                flex-direction: column;
+
+                h2{
+                    font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 96px;
+                    line-height: 142px;
+                    color : var(--TillandsiaPurple);
+                }
+            }
+    
+            #bottomReviews{
+                display : grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas : ". onceMore .";
+                ul{
+                    grid-area : onceMore;
+                    li{
+                        display : flex;
+                        flex-direction: row;
+                        align-items : center;
+                        gap : 16px;
+
+                        img{
+                            width : 10rem;
+                        }
+                        
+                        .bar-bg{
+                            background-color : none;
+                            border : 2px solid black;
+                            height : 10px;
+                            width : 100%;
+                            margin-top : 8px;
+                            filter: drop-shadow(0px 4px 0px rgba(51, 51, 51, 0.16));
+                            border-radius: 8px;
+
+                            // .blackbar{
+                            //     background-color: black;
+                            //     height : 100%;
+                            // }
+
+                            #black-5{
+                                background-color: black;
+                                height : 100%;
+                                width : 80%;
+                            }
+
+                            #black-4{
+                                background-color: black;
+                                width : 60%;
+                                height : 100%;
+                            }
+
+                            #black-3{
+                                background-color: black;
+                                width : 30%;
+                                height : 100%;
+                            }
+
+                            #black-2{
+                                background-color: black;
+                                width : 10%;
+                                height : 100%;
+                            }
+
+                            #black-1{
+                                background-color: black;
+                                width : 20%;
+                                height : 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //general div stuff
+        div{
+            
+        }
+
+
+    }
+}
