@@ -517,7 +517,47 @@ ul li {
 .comment > div {
   grid-area: spacing;
   display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  /* Soft Shadow */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 8px 8px;
+}
+.comment > div h1 {
+  padding-left: 16px;
+  box-sizing: border-box;
+  background-color: var(--NightGullGrey);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 60px;
+  color: white;
+  width: 100%;
+}
+.comment > div h1 section {
+  display: flex;
   flex-direction: row;
+}
+.comment > div h1 div {
+  display: flex;
+  flex-direction: row;
+}
+.comment > div h1 div h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 60px;
+}
+.comment > div h1 h3 {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 60px;
+  text-align: right;
+}
+.comment > div h1 img {
+  object-fit: contain;
+  width: 33%;
 }
 /* =============
     Typography
@@ -1218,6 +1258,12 @@ footer > div button {
   width: 20%;
   height: 100%;
 }
+#reviews > div #mostAGH {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
 /* =============
     checkout
 ============= */

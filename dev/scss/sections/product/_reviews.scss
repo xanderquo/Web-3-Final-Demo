@@ -142,8 +142,10 @@
             }
         }
         //general div stuff
-        div{
-            
+        #mostAGH{
+            display : flex;
+            flex-direction: row;
+            gap : 16px;
         }
 
 
